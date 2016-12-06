@@ -1,16 +1,41 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Hier komt je titel</title>
+		<title>Siu Soan Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/6cedc156af.css"> <!--Cool icons from FontAwesome-->
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+
+	<div class="pure-menu pure-menu-horizontal">
+		    <h1 id="title">SIU SOAN</h1>
+		    <ul class="pure-menu-list">
+		        <li class="pure-menu-item"><a href="#s2" class="pure-menu-link">About me</a></li>
+		        <li class="pure-menu-item"><a href="#s3" class="pure-menu-link">My work</a></li>
+		        <li class="pure-menu-item"><a href="#s4" class="pure-menu-link">Contact</a></li>
+		    </ul>
+				<div class="navLine"></div>
+	</div>
+
 	<body>
        <%- yield %>
 	     <script src="assets/javascripts/application.js"></script>
 	</body>
+
+	<footer>
+				<div class="footerLine"></div>
+				<ul class="footerList">
+							<li class="footerInfo">Copyright Siu Soan 2016</li>
+							<li class="footerInfo">Built with Pure CSS and harp</li>
+							<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							<li class="footerInfo"><a href="#title">Back to top</a></li>
+
+				</ul>
+	</footer>
 </html>

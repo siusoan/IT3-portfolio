@@ -1,41 +1,202 @@
+$mainBlue:     rgb(0, 163, 255);
+$mediumBlue:     rgb(5, 97, 149);
+$darkBlue:     rgb(4, 43, 65);
+
+
+/*TABLE OF CONTENTS
+  1. GENERAL/OTHER
+  2. NAVIGATION
+  3. TITLES AND PARAGRAPHS
+  4. BUTTONS
+  5. GRAPHIC ELEMENTS AND ICONS
+  6. IMAGES
+  7. LISTS AND FORMS
+  8. RESPONSIVE DESIGN
+*/
+
+
+/*1. GENERAL/OTHER*/
 body {
-      padding: 25px;
-      font-family: helvetica, sans-serif;
+      width: 75%;
+      font-family: 'Helvetica', sans-serif;
+      margin: 25px auto;
 }
 
-.pure-g {
-      border: 5px solid orange;
-      margin-bottom: 25px;
+#s1, #s2 {
+  height: 1000px;
+}
+
+#s3 {
+  height: 1600px;
 }
 
 .pure-u-1 {
-      box-sizing: border-box;
-      border: 5px solid cadetblue;
-      padding: 25px;
+      height: 800px;
+}
+
+.pure-u-1-3 {
+      margin-left: 10em;
+}
+
+.skills-column {
+      background-color: rgb(230, 230, 230);
+      margin-left: 3em;
+      padding: 10px;
+}
+
+.inactive {
+      display: none;
+}
+
+
+/*2. NAVIGATION AND FOOTER*/
+.pure-menu-list{
+      float: left;
+      .pure-menu-item {
+            background: $mainBlue;
+            margin-top: 25px;
+            .pure-menu-link {
+                  color: white;
+            }
+            .pure-menu-link:hover {
+                  background: $mainBlue;
+                  color: black;
+            }
+
+      }
+}
+
+.footerList {
       text-align: center;
 }
 
+.footerList li {
+      font-size: 0.8em;
+      display: inline;
+}
+
+.footerInfo {
+      margin: 0 2em;
+}
+
+footer a {
+      color: $mainBlue;
+}
+
+
+/*3. TITLES AND PARAGRAPHS*/
 h1 {
-      font-size: 1.2em;
-      font-weight: 900;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-right: 30em;
+      float: left;
+}
+
+#intro {
+      font-size: 14em;
+      font-weight: bold;
+      margin-left: 0.1em;
 }
 
 h2 {
-      font-size: 1.1em;
-      font-weight: 900;
+      font-size: 5em;
+      font-weight: 500;
+      margin: 25px 0 40px 0.6em;
+}
+
+h3 {
+      font-size: 2em;
+      font-weight: 400;
+      margin: 50px 0 25px 1.5em;
       margin-bottom: 25px;
 }
 
-p {
-      margin-bottom: 25px;
-      text-align: left;
-      line-height: 1.6em;
+.info {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-left: 2em;
+      margin-bottom: 35px;
 }
 
-ul {
-      list-style-type: none;
-      padding: 0;
+
+/*4. BUTTONS*/
+.skills-button {
+      width: 100%;
+      color: white;
+      margin-left: 3em;
 }
+
+.sb1 {
+      background: $mainBlue;
+}
+
+.sb2 {
+      background: $mediumBlue;
+}
+
+.sb3 {
+      background: $darkBlue;
+}
+
+
+/*5. GRAPHIC ELEMENTS AND ICONS*/
+.navLine {
+      overflow-x: auto;
+      height: 4px;
+      background-color: $mainBlue;
+      margin-bottom: 50px;
+      clear: both;
+}
+
+.fa-chevron-down, .fa-chevron-up {
+      margin-left: 1.5em;
+}
+
+.footerLine {
+      @extend .navLine;
+      background-color: $darkBlue;
+      margin-bottom: 10px;
+}
+
+
+/*6. IMAGES*/
+#selfportrait {
+      max-width: 75%;
+      margin-top: 115px;
+}
+
+.work-image {
+      width: 25em;
+      height: 300px;
+      margin-bottom: 50px;
+}
+
+.i1 {
+      background-image: url("../images/work1.jpg");
+      background-size: cover;
+}
+
+.i2 {
+      background-image: url("../images/work2.jpg");
+      background-size: contain;
+}
+
+/*7. LISTS AND FORMS*/
+.skills-list li {
+      font-size: 1.2em;
+      line-height: 1.3em;
+      list-style: disc inside;
+}
+
+.pure-form {
+      margin-left: 3em;
+}
+
+button[type="submit"] {
+      background-color: $mainBlue;
+}
+
+/*8. RESPONSIVE DESIGN*/
 
 @media (max-width: 48em) {
       li a {
